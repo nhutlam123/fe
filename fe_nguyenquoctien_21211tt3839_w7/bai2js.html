@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>bai tap 2 js</h1>
+
+    <button onclick="greetingFunction()">hello</button>
+    <button onclick="taoRandom()">tinh cong</button>
+    <h2 id="greeting">Xin chao</h2>
+    <h3 id="so1">so 1</h3>
+    <h3 id="so2">so 2</h3>
+
+
+    <!--tach ten -->
+    <script>
+        //viet ham
+        function greetingFunction() {
+            let fullname = prompt("ban ten gi", "nguyen quoc tien");
+            // alert("hello"+fullname.substr(fullname.lastIndexOf(' ')));
+
+            document.getElementById("greeting").innerHTML = "hello" + fullname.substr(fullname.lastIndexOf(' '));
+
+
+        }
+        function taoRandom() {
+            
+
+            document.getElementById("so1").innerHTML =  "" + Math.random(); //[0,1)
+            document.getElementById("so2").innerHTML =  "" + Math.random(); //[0,1)
+
+
+    
+
+</body>
+
+</html>
