@@ -5,23 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="./public/js/myfunction.js"></script>
+   
 </head>
 <body>
     
-    <p id="demo"> demo</p>
-    <input type="text" name="ho ten" id="ten"><br>
-    <button onclick = "document.getElementById('ten').innerHTML "></button>
+   <form name="hinhchunhatform">
+    <input type="text" name="dai" id="dai" placeholder="chieu dai"><br>
+    <input type="text" name="rong" id="rong" placeholder="chieu rong"><br>
+    <input type="button" value="ket qua" onclick="hinhchunhat()"><br>
+   </form><br>
+   <form name="hinhtronform">
+    <input type="text" name="bankinh" id="bankinh" placeholder="ban kinh"><br>
+   
+    <input type="button" value="ket qua" onclick="hinhtron()"><br>
+   </form>
+   <h2 id="dientich">
+
+   </h2>
     
-    <Script>
-        //cau 1
-        document.getElementById("demo").innerHTML = "Wellcome TDC";
-        document.write("weelcome TDC")
-        alert("Wellcome TDC")
-        console.log("Wellcome TDC")
-        // cau2
-        
-    </Script>
-    
-    
+
 </body>
 </html>
