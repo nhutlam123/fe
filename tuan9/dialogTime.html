@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Dialog time</title>
+    <style>
+        .clock{
+            text-align: center;
+            color: aqua;
+            font-size: 100px;
+            letter-spacing: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row d-lex justify-content-center">
+            <div id="dlock" class="clock">
+                00:00:00 AM
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let displayTime = function () {
+            var date = new Date();
+            var h = date.getHours();
+            var m = date.getMinutes();
+            var s = date.getSeconds();
+            var period = "AM";
+
+            var time = h + ":" + m +":" + s +" " + period;
+            document.getElementById("dclock").innerText = time;
+            
+        }
+        setInterval(displayTime,1000);
+        displayTime();
+    </script>
+</body>
+</html>
